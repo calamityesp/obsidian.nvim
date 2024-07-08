@@ -33,7 +33,7 @@ local function open_in_app(client, path)
     cmd = "xdg-open"
     args = { uri }
   elseif this_os == util.OSType.Wsl then
-    cmd = "wsl-open"
+    cmd = "obsidian"
     args = { uri }
   elseif this_os == util.OSType.Windows then
     run_in_shell = false
